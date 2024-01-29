@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Sass Mego</title>
+</head>
+<body>
+    <nav>
+        <div class="info-sistema">
+            <img src="../dist/images/coopmego-logo-white.svg" alt="imagen_coopmego">
+            <h2>|</h2>
+            <h2>Soporte</h2>
+        </div>
+        <div class="actions">
+            <div class="profile">
+                <button class="btn_mg btn_mg__secondary" id="profile">Cosme Fulanito</button>
+                <div class="dropdown_mg active" id="dropdown_mg">
+                    <a href="#">Cambiar contraseña</a>
+                    <a href="#">Preguntas de seguridad</a>
+                </div>
+            </div>
+            <button class="btn_mg btn_mg__secondary" id="logout">
+                <img src="../dist/images/exit.svg" alt="cerrar sesion"></img>
+            </button>   
+        </div>
+    </nav>
+    <div class="content">
+        <div class="sidebar sidebar_min" id="sidebar">
+            <div class="sidebar_info">
+                <div class="sidebar_minimize">
+                    <button class="btn_mg btn_mg__secondary" id="toggle-sidebar"><</button>
+                </div>
+                <div class="sidebar_profile">
+                    <img src="../dist/images/avatar1.png" alt="">
+                    <h3>Cosme Fulanito</h3>
+                    <hr>
+                    <h4>Asistente de Operaciones 2</h4>
+                </div>
+            </div>
+            <div class="sidebar_menu">
+                <div class="sidebar_menu__items">
+                    <div class="sidebar_menu__item">
+                        <a class="active item__master">Reportes</a>
+                        <div class="item_slaves">
+                            <a class="item__slave">Reportes</a>
+                        </div>
+                    </div>
+                    <div class="sidebar_menu__item">
+                        <a class="item__master">Reportes</a>
+                        <div class="item_slaves">
+                            <a class="item__slave">
+                                Reportes
+                            </a>
+                            <a class="item__slave">Reportes</a>
+                        </div>
+                    </div>
+                    <div class="sidebar_menu__item">
+                        <a class="item__master">Reportes</a>
+                        <div class="item_slaves">
+                            <a class="item__slave">Reportes</a>
+                            <a class="item__slave">Reportes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container_mg">
+            <div class="card">
+                <div class="card_header">
+                    <h2>MegoSistemas</h2>
+                </div>
+                <label for="user" class="pbmg1">Usuario</label>
+                <input type="text" name="user" placeholder="Ingrese su usuario">
+                <a href="" class="link_mg">¿Olvidaste tu contraseña?</a>
+                <label for="password" class="pbmg1">Usuario</label>
+                <input type="password" id="password" name="password" class="no_valido" placeholder="Ingrese su contraseña">
+                <button class="btn_mg btn_mg__primary">Continuar</button>
+            </div>
+            <table>
+                <tr>
+                    <th>Dato 1</th>
+                    <th>Dato 1</th>
+                    <th>Dato 3</th>
+                    <th>Dato 4</th>
+                    <th>Dato 4</th>
+                </tr>
+                <tr>
+                    <td>Valor</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                    <td>Valor</td>
+                    <td>Valor</td>
+                    <td>Valor</td>
+                </tr>
+                <tr>
+                    <td>Valor</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                    <td>Valor</td>
+                    <td>Valor</td>
+                    <td>Valor</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
